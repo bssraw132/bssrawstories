@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking — BssRaw Stories</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+<div id="preloader"><div class="spinner"></div></div>
+
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="index.html" class="logo-text">BssRaw Stories</a>
+    </div>
+    <div class="nav-right">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="booking.html" class="active">Booking</a>
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+</nav>
+
+<section class="section">
+    <h2>Booking Form</h2>
+    <p class="section-sub">Tell me about your shoot, and I’ll get back to you with details.</p>
+
+    <div class="booking-box">
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Full Name*" required>
+                <input type="email" placeholder="Email Address*" required>
+            </div>
+
+            <div class="form-row">
+                <input type="tel" placeholder="Phone Number*" required>
+                <input type="text" placeholder="Location / City*" required>
+            </div>
+
+            <div class="form-row">
+                <select required>
+                    <option value="">Select Shoot Type*</option>
+                    <option>Wedding</option>
+                    <option>Pre-wedding</option>
+                    <option>Portrait</option>
+                    <option>Street / Creative</option>
+                    <option>Event</option>
+                    <option>Other</option>
+                </select>
+
+                <input type="date" required>
+            </div>
+
+            <textarea placeholder="Share your idea, vibe, or any details you have in mind*"
+                      required></textarea>
+
+            <button type="submit" class="btn">Submit Booking Request</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 BssRaw Stories — All Rights Reserved</p>
+</footer>
+
+<a href="https://instagram.com/yourhandle" target="_blank" class="float-instagram">
+    <i class="fab fa-instagram"></i>
+</a>
+
+<div id="lightbox" class="lightbox">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

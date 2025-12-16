@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BssRaw Stories</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body>
+
+<!-- ================= PRELOADER ================= -->
+<div id="preloader">
+    <div class="spinner"></div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="index.html" class="logo-text">BssRaw Stories</a>
+    </div>
+    <div class="nav-right">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="home">
+    <div class="hero-left">
+        <img src="hero.jpg" alt="Hero Image">
+    </div>
+
+    <div class="hero-right">
+        <h1>BssRaw Stories</h1>
+        <p class="tagline">
+            “Crafting stories frame by frame — where precision meets creativity.”
+        </p>
+
+        <img src="logo.png" class="hero-logo" alt="Logo">
+
+        <a href="#contact" class="btn">CONNECT</a>
+
+       <div class="social-icons">
+        <a href="#" onclick="openModal('Instagram')">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" onclick="openModal('WhatsApp')">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:bssraw132@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+
+    </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I’m <strong>B. Sai Swaraj</strong>, the eye behind <strong>BssRaw Stories</strong>.
+        I capture raw emotions, real moments, and cinematic frames.
+    </p>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="section">
+    <h2>Portfolio & Highlights</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="post1.jpg">
+            <h3>Street Portrait</h3>
+            <p>Candid moments from the streets.</p>
+            <a href="street.html" class="mini-link">View Gallery →</a>
+        </div>
+
+        <div class="card">
+            <img src="post2.jpg">
+            <h3>Night Trails</h3>
+            <p>Urban long-exposure frames.</p>
+            <a href="night.html" class="mini-link">View Gallery →</a>
+        </div>
+
+        <div class="card">
+            <img src="post3.jpg">
+            <h3>Nature’s Pause</h3>
+            <p>Stillness in motion.</p>
+            <a href="nature.html" class="mini-link">View Gallery →</a>
+        </div>
+
+        <div class="card">
+            <img src="post4.jpg">
+            <h3>Creative Frames</h3>
+            <p>Experimental visuals.</p>
+            <a href="creative.html" class="mini-link">View Gallery →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <p class="section-sub">Feel free to reach out anytime</p>
+
+    <div class="social-icons">
+        <a href="#" onclick="openModal('Instagram')">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" onclick="openModal('WhatsApp')">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="mailto:bssraw132@gmail.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2025 BssRaw Stories — All Rights Reserved</p>
+</footer>
+
+<!-- ================= CONTACT MODAL ================= -->
+<div id="contactModal" class="contact-modal">
+  <div class="contact-box">
+    <h2>Quick Contact</h2>
+
+    <input type="text" id="cname" placeholder="Your Name" required>
+    <input type="email" id="cemail" placeholder="Your Email" required>
+    <textarea id="cmessage" placeholder="What are you looking for?" required></textarea>
+
+    <button onclick="sendWhatsApp()">Continue</button>
+    <button class="close-btn" onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
